@@ -1,4 +1,6 @@
-public class Filme {
+package br.com.screenmatch.modelos;
+
+public class Titulo {
     //Atributos precisos para filmes
     private String nome;
     private int anoDeLancamento;
@@ -42,7 +44,7 @@ public class Filme {
     }
 
     //Criando um método
-    void exibeFichaTecnica(){
+    public void exibeFichaTecnica(){
         System.out.println("Nome do filme: " + nome);
         System.out.println("Ano de lançamento:" + anoDeLancamento);
         System.out.println("Avalicação: " + somaDasAvaliacoes);
@@ -50,12 +52,12 @@ public class Filme {
 
     /*método para avaliar filmes
     passa um argumento em double*/
-    void avalia(double nota){
+    public void avalia(double nota){
         somaDasAvaliacoes += nota;
         totalDeAvaliacoes++;
     }
 
-    double retornaMedia(){
+    public double retornaMedia(){
         return somaDasAvaliacoes/totalDeAvaliacoes;
     }
 

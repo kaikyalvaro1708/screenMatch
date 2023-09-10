@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e5c9512-9af2-4dc2-8971-27a5e55ecd4f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/br/com/screenmatch/main/Arrays.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/screenmatch/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/screenmatch/modelos/Filme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/screenmatch/modelos/Filme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/screenmatch/main/Arrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/screenmatch/main/Arrays.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/screenmatch/modelos/Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/screenmatch/modelos/Serie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/screenmatch/modelos/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/screenmatch/modelos/Titulo.java" afterDir="false" />
     </list>

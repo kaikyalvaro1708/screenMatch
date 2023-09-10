@@ -4,7 +4,7 @@ import br.com.screenmatch.modelos.Filme;
 import br.com.screenmatch.modelos.Serie;
 import br.com.screenmatch.modelos.Titulo;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class Arrays {
     public static void main(String[] agrs){
@@ -14,8 +14,6 @@ public class Arrays {
         outroFilme.avalia(10);
         Serie lost = new Serie("Lost", 2000);
         lost.avalia(8);
-
-
 
         ArrayList<Titulo> lista = new ArrayList<>();
         lista.add(meuFilme);
@@ -31,6 +29,23 @@ public class Arrays {
             }
 
         }
+
+        //New array
+        List<String> buscaArtista = new LinkedList<>();
+        buscaArtista.add("Adam Sandler");
+        buscaArtista.add("Paulo");
+        buscaArtista.add("Jacqueline");
+
+        Collections.sort(buscaArtista); //Deixa em ordem alfabetica
+
+        System.out.println("| Artistas Famosos:");
+        System.out.println(buscaArtista);
+
+        System.out.println("| Lista de Título ordenados: ");
+        Collections.sort(lista); //Ordem alfabética
+        lista.sort(Comparator.comparing(Titulo::getAnoDeLancamento)); //Comparar os anos de lançamento
+        System.out.println(lista);
+
 
 
     }

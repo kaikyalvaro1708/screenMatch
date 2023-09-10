@@ -1,6 +1,6 @@
 package br.com.screenmatch.modelos;
 
-public class Titulo {
+public class Titulo implements Comparable<Titulo>{
     //Atributos precisos para filmes
     private String nome;
     private int anoDeLancamento;
@@ -67,4 +67,9 @@ public class Titulo {
         return somaDasAvaliacoes/totalDeAvaliacoes;
     }
 
+    //Compare - Titulo com outroTitulo
+    @Override
+    public int compareTo(Titulo outroTitulo) {
+        return this.getNome().compareTo(outroTitulo.getNome());
+    }
 }

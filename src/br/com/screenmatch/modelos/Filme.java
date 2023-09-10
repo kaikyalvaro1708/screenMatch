@@ -6,6 +6,12 @@ import br.com.screenmatch.calculos.Classificavel;
 public class Filme extends Titulo implements Classificavel {
     private String diretor;
 
+    //Constructor
+    public Filme(String nome, int anoDeLancamento) {
+        super(nome, anoDeLancamento);
+    }
+
+    //Getter
     public String getDiretor(){
         return diretor;
     }

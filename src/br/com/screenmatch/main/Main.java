@@ -1,3 +1,5 @@
+package br.com.screenmatch.main;
+
 import br.com.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.screenmatch.calculos.Recomendacao;
 import br.com.screenmatch.modelos.Episodio;
@@ -9,8 +11,8 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args){
         //chamando o objeto br.com.screenmatch.modelos.Filme
-        Filme meuFilme = new Filme();
-        meuFilme.setNome("Vingadores");
+        Filme meuFilme = new Filme("Vingadores",  2012);
+        //meuFilme.setNome("Vingadores");
         meuFilme.setAnoDeLancamento(2012);
         meuFilme.setDuracaoEmMinutos(180);
         System.out.println("Duração do filme: " + meuFilme.getDuracaoEmMinutos());
@@ -24,16 +26,12 @@ public class Main {
         System.out.println(meuFilme.pegaMedia());
 
         //Exibe outro filme
-        Filme outroFilme = new Filme();
-        outroFilme.setNome("Interestelar");
-        outroFilme.setAnoDeLancamento(2014);
+        var outroFilme = new Filme("Interestelar", 2014);
         outroFilme.setDuracaoEmMinutos(180);
         outroFilme.avalia(10);
 
         //br.com.screenmatch.modelos.Serie
-        Serie lost = new Serie();
-        lost.setNome("Lost");
-        lost.setAnoDeLancamento(2000);
+        Serie lost = new Serie("Lost", 2000);
         lost.exibeFichaTecnica();
         lost.setTemporadas(10);
         lost.setEpisodiosPorTemporada(10);
@@ -61,6 +59,7 @@ public class Main {
         System.out.println("Tamanho da lista " + listaDeFilmes.size());
         System.out.println("Primeiro filme: " + listaDeFilmes.get(0).getNome());
         System.out.println("toString do filme " + listaDeFilmes.get(0).toString());
+
 
     }
 }

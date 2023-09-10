@@ -15,8 +15,13 @@ public class Filme extends Titulo implements Classificavel {
 
     //Pegou Classificacao está na interface
     @Override
-    public int getClassificacao(){
-        return (int) pegaMedia()/2;
+    public int getClassificacao() {
+        return (int) pegaMedia() / 2;
     }
 
+    //Sobre escrevendo o toString(fonte da classe Filme"
+    @Override
+    public String toString() {
+        return  "Filme: " + this.getNome()+ "(" + this.getAnoDeLancamento()+")";
+    }
 }

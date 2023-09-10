@@ -4,6 +4,8 @@ import br.com.screenmatch.modelos.Episodio;
 import br.com.screenmatch.modelos.Filme;
 import br.com.screenmatch.modelos.Serie;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args){
         //chamando o objeto br.com.screenmatch.modelos.Filme
@@ -19,7 +21,14 @@ public class Main {
         meuFilme.avalia(5);
         meuFilme.avalia(10);
         System.out.println("Total de avaliações: "+ meuFilme.getTotalDeAvaliacoes());
-        System.out.println(meuFilme.retornaMedia());
+        System.out.println(meuFilme.pegaMedia());
+
+        //Exibe outro filme
+        Filme outroFilme = new Filme();
+        outroFilme.setNome("Interestelar");
+        outroFilme.setAnoDeLancamento(2014);
+        outroFilme.setDuracaoEmMinutos(180);
+        outroFilme.avalia(10);
 
         //br.com.screenmatch.modelos.Serie
         Serie lost = new Serie();
@@ -44,5 +53,14 @@ public class Main {
         episodio.setSerie(lost);
         episodio.setTotalVizualizacoes(1000);
         filtro.filtra(episodio);
+
+        //Criando um array
+        ArrayList<Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(meuFilme);
+        listaDeFilmes.add(outroFilme);
+        System.out.println("Tamanho da lista " + listaDeFilmes.size());
+        System.out.println("Primeiro filme: " + listaDeFilmes.get(0).getNome());
+        System.out.println("toString do filme " + listaDeFilmes.get(0).toString());
+
     }
 }
